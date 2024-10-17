@@ -2,7 +2,11 @@ package org.example;
 
 public class Square extends Shapes {
 
-    int length = 10;
+    int length;
+
+    public Square(int x){
+        length = x;
+    }
 
     @Override
     public double area() {
