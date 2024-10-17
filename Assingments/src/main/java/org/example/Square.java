@@ -2,15 +2,24 @@ package org.example;
 
 public class Square extends Shapes {
 
-    int length;
+    private int length;
 
     public Square(int x){
-        length = x;
+        setLength(x);
     }
+
+    protected int getLength(){
+        return length;
+    }
+
+    protected void setLength(int length){
+        this.length = length;
+    }
+
 
     @Override
     public double area() {
-        double area = length * length;
+        double area = getLength() * getLength();
         return area;
     }
 }

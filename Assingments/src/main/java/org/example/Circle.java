@@ -1,14 +1,24 @@
 package org.example;
 
 public class Circle extends Shapes {
-    int r ;
+    private int radius ;
     public Circle(int x){
-        r  = x;
+       setRadius(x);
+    }
+
+    protected int getRadius()
+    {
+        return radius;
+    }
+
+    protected void setRadius(int radius)
+    {
+       this.radius = radius;
     }
 
     @Override
     double area() {
-        double area = 3.14 *(r*r);
+        double area = 3.14 *(getRadius()*getRadius());
         return area;
     }
 

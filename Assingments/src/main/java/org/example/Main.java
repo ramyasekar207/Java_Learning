@@ -6,7 +6,7 @@ public class Main {
         Circle circle = new Circle(10);
         System.out.println("Area of Circle : "+circle.area());
 
-        Rectangle rec = new Rectangle(10, 20);
+        Rectangle rec = new Rectangle(10,20);
         System.out.println("Area of Rectangle : "+rec.area());
 
         Square squ = new Square(10);
